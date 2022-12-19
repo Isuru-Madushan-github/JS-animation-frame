@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right,rgb(110, 110, 247),white);
+}
+.container-wrapper{
+    width: 800px;
+    margin: 0 auto;
+    background: gray;
+    border-left: 1px solid white;
+    border-right: 1px solid rgb(238, 129, 129);
+    border-top: 1px solid white;
+    border-bottom: 1px solid rgb(132, 243, 98);
+    display: flex;
+    flex-direction: column;
+}
+.container-wrapper .btn-wrapper{
+    text-align: center;
+    padding: 2rem;
+}
+.container-wrapper .btn-wrapper button{
+    padding: .5rem;
+    color: white;
+    background: blue;
+    border: none;
+    font-size: 1.2em;
+    margin-left: 3rem;
+}
+.container-wrapper .container{
+    padding: 4rem;
+    background: rgb(146, 143, 143);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container-wrapper .container .frame{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: .5rem;
+}
+.container-wrapper .container .frame:nth-child(n){
+    background: rgb(247, 35, 70);
+}
+.container-wrapper .container .frame:nth-child(2n){
+    background: rgb(0, 252, 42);
+}
+.container-wrapper .container .frame:nth-child(3n){
+    background: rgb(25, 0, 252);
+}
+.container-wrapper .container .frame:nth-child(4n){
+    background: rgb(228, 253, 0);
+}
+.container-wrapper .container .frame:nth-child(5n){
+    background: rgb(145, 255, 0);
+}
